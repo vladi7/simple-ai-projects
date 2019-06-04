@@ -1,0 +1,3 @@
+Example how to run on the latest java on Windows 7
+javac 8-puzzle.java
+java 8-puzzle prog1_input.txt

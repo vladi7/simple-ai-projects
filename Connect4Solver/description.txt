@@ -1,0 +1,22 @@
+Monte Carlo Tree Search Connect 4 Game
+Vlad Dubrovenski
+
+
+To run the program please use the following:
+javac *.java
+java Proj2 [number of trials for AI1] [number of trials for AI2] [number of games]
+
+example:
+javac *.java
+java Proj2 100 75 1
+
+My program has 3 classes. Proj2.java is the class that contains the run logic(user input, counting the number of 
+games won by both sides, etc.). Board.java is the class that contain the double array of integers storing the current 
+state of the board, whether the boards if full, if there is a winning combination in horizontal, vertical, and 2 diagonal directions.
+And it contains the string representation of the board, which makes it the board data structure.
+And the last class in my program is AI.java, which utilizes the algorithm called Monte Carlo Tree Search.
+This algorithm is using the formula of Upper Confident Bound 1 applied to trees with exploration parameter equal to square root of 2.
+This class also contains a datastructure for Monte Carlo Search Tree called Node, which contains parent, children, and board. This data structure also stores the number 
+of visits and wins, which is used by AI to calculate the probability of the best move.
+The quality of AI heavily depends on the number of trials per position set by user. We can observe that by setting the number of games to 100 or even to 1000.
+The AI with the largest number of trials will most likely win.
